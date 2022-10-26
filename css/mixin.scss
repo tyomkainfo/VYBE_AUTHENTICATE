@@ -1,0 +1,61 @@
+@use "sass:math";
+// вычисление lh и задавание fz
+@mixin font($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: math.div($line-height, $font-size);
+}
+
+// Медиа запросы
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
+@mixin min-screen($res) {
+  @media screen and (min-width: $res) {
+    @content;
+  }
+}
+
+// Скрыть элемента
+@mixin visibility-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+// Сброс блочной модели
+@mixin reset-model {
+  padding: 0;
+  margin: 0;
+}
+
+// Сброс списка
+@mixin reset-list {
+  list-style: none;
+  @include reset-model();
+}
+
+// Сброс ссылки
+@mixin reset-link {
+  text-decoration: none;
+  bottom: 0;
+  color: inherit;
+  font-family: inherit;
+}
+
+// Сброс кнопки
+@mixin reset-button {
+  text-decoration: none;
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}

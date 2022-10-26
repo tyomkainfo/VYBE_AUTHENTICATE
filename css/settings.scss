@@ -1,10 +1,13 @@
-@charset "UTF-8";
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  //font-size: 10px;
 }
 
 /* Выставляем основные настройки по-умолчанию для body */
@@ -16,10 +19,11 @@ body {
 
 ul, ol {
   margin: 0;
-}
-ul.list-unstyled, ol.list-unstyled {
-  list-style: none;
-  padding: 0;
+
+  &.list-unstyled {
+    list-style: none;
+    padding: 0;
+  }
 }
 
 input,
@@ -57,29 +61,27 @@ img {
   display: block;
 }
 
+//=============================
+
 .container {
   max-width: 1140px;
   width: 100%;
   margin: 0 auto;
   padding: 0 10px;
-}
-@media screen and (max-width: 1200px) {
-  .container {
+
+  @include max-screen(1200px) {
     max-width: 960px;
   }
-}
-@media screen and (max-width: 992px) {
-  .container {
+
+  @include max-screen(992px) {
     max-width: 720px;
   }
-}
-@media screen and (max-width: 768px) {
-  .container {
+
+  @include max-screen(768px) {
     max-width: 540px;
   }
-}
-@media screen and (max-width: 576px) {
-  .container {
+
+  @include max-screen(576px) {
     max-width: 100%;
   }
 }
@@ -88,9 +90,8 @@ img {
   width: 100%;
   margin: 0 auto;
   padding: 0 10px;
-}
-@media screen and (max-width: 575px) {
-  .container-fluid {
+
+  @include max-screen(575px) {
     padding: 0 20px;
   }
 }
@@ -117,20 +118,30 @@ img {
 }
 
 @font-face {
-  font-family: "Gilroy";
-  src: url("../fonts/Gilroy-Regular.eot");
-  src: url("../fonts/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.ttf") format("truetype"), url("../fonts/Gilroy-Regular.svg#Gilroy-Regular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Neuzeit Grotesk";
-  src: url("../fonts/NeuzeitGro-Reg.eot");
-  src: url("../fonts/NeuzeitGro-Reg.eot?#iefix") format("embedded-opentype"), url("../fonts/NeuzeitGro-Reg.woff2") format("woff2"), url("../fonts/NeuzeitGro-Reg.woff") format("woff"), url("../fonts/NeuzeitGro-Reg.ttf") format("truetype"), url("../fonts/NeuzeitGro-Reg.svg#NeuzeitGro-Reg") format("svg");
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-Regular.eot');
+  src: url('../fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+  url('../fonts/Gilroy-Regular.woff') format('woff'),
+  url('../fonts/Gilroy-Regular.ttf') format('truetype'),
+  url('../fonts/Gilroy-Regular.svg#Gilroy-Regular') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
-/*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: 'Neuzeit Grotesk';
+  src: url('../fonts/NeuzeitGro-Reg.eot');
+  src: url('../fonts/NeuzeitGro-Reg.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/NeuzeitGro-Reg.woff2') format('woff2'),
+  url('../fonts/NeuzeitGro-Reg.woff') format('woff'),
+  url('../fonts/NeuzeitGro-Reg.ttf') format('truetype'),
+  url('../fonts/NeuzeitGro-Reg.svg#NeuzeitGro-Reg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
