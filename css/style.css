@@ -466,7 +466,7 @@ body.hidden:before {
     .main_content .description_step img {
       max-width: 161px;
       display: block; }
-  .main_content.Distributors h1, .main_content.Distributors h4 {
+  .main_content.distributors h1, .main_content.distributors h4 {
     text-align: left; }
 
 ::placeholder {
