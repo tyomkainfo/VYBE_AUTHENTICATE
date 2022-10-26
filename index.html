@@ -11,9 +11,34 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="header">
-    <div class="container">
 
+<header class="header">
+    <div class="header__container container">
+        <div class="header__content">
+
+            <a class="header__logo" href="#">
+                <img src="images/logo-header.svg"
+                     alt="vybe-by-limitless"
+                     width="247px"
+                     height="32px">
+            </a>
+
+            <div class="header__notification">
+                <p class="text">Welcome to our new shop! Start shopping.</p>
+                <button class="notification-close" type="button">
+                    <img src="images/exit-circle.svg" alt="close">
+                </button>
+            </div>
+
+            <nav class="header__btn-group">
+                <button class="btn btn-menu" type="button">MENU</button>
+
+                <a class="btn-shopping-bug" href="#">
+                    <img src="images/shopping-bug.svg" alt="shopping-bug">
+                </a>
+            </nav>
+
+        </div>
     </div>
 </header>
 
@@ -27,7 +52,8 @@
 
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script src="js/vendors/owl.carousel.js"></script>
 </body>
 </html>
