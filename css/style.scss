@@ -702,6 +702,12 @@ html:not(.touch) .shift-word:hover > span span {
   transition: transform .22s cubic-bezier(.445, .05, .55, .95)
 }
 
+.header{
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
 
 
 
