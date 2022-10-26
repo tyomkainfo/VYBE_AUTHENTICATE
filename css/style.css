@@ -373,3 +373,7 @@ footer .carusel_footer h4 {
 footer .owl-carousel a {
   max-width: 217px;
   display: inline-block; }
+@media screen and (max-width: 767px) {
+  footer .owl-carousel a {
+    max-width: 100%;
+    margin: 10px; } }

@@ -20,7 +20,7 @@ $('.owl-carousel').owlCarousel({
 
     responsive:{
         0:{
-            items:1
+            items:2
         },
 
         1000:{

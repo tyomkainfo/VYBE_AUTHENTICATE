@@ -251,6 +251,10 @@ footer {
     a {
       max-width: 217px;
       display: inline-block;
+      @include max-screen(767px) {
+        max-width: 100%;
+        margin: 10px;
+      }
     }
   }
 }
