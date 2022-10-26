@@ -1,10 +1,10 @@
-@use "sass:math";
-
-// вычисление lh и задавание fz
-@mixin font($font-size, $line-height) {
-  font-size: $font-size;
-  line-height: math.div($line-height, $font-size);
-}
+//@use "sass:math";
+//
+//// вычисление lh и задавание fz
+//@mixin font($font-size, $line-height) {
+//  font-size: $font-size;
+//  line-height: math.div($line-height, $font-size);
+//}
 
 // Медиа запросы
 @mixin max-screen($res) {
@@ -60,3 +60,10 @@
   padding: 0;
   cursor: pointer;
 }
+
+
+
+
+
+
+

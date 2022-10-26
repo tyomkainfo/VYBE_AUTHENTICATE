@@ -16,3 +16,7 @@ body::before {
   border-bottom: 2px solid black;
   content: "Error: Undefined mixin.\a    \2577 \a 72 \2502  \250c    @include max-screen(1200px) {\a 73 \2502  \2502      max-width: 960px;\a 74 \2502  \2514    }\a    \2575 \a   settings.scss 72:3  root stylesheet";
 }
+
+
+
+
