@@ -225,7 +225,9 @@
 footer {
   .carusel_footer {
     margin-bottom: 113px;
-
+    @include max-screen(767px){
+      margin-bottom: 0px;
+    }
     h5 {
       font-family: 'Gilroy-Medium';
       font-style: normal;
@@ -308,7 +310,7 @@ footer {
 .c-297 {
   width: 100%;
   margin: 0 auto;
-  padding: 0 153px;
+  padding: 0 10px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -320,12 +322,12 @@ footer {
 
 @media screen and (min-width: 1656px) {
   .c-297 {
-    max-width: 1656px;
+    max-width: 1140px;
   }
 }
 @media screen and (max-width: 767px){
   .c-297 {
-    padding: 0 24px;
+    padding: 0 10px;
   }
 }
 
@@ -591,7 +593,11 @@ img, video {
   -ms-flex-pack: justify;
   justify-content: space-between;
   -ms-flex-align: center;
-  align-items: center
+  align-items: center;
+  padding-bottom: 42px;
+  @include max-screen(767px){
+    padding-bottom: 10px;
+  }
 }
 
 #footer .bottom span {
