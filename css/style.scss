@@ -2,23 +2,25 @@
 @import "./global/settings";
 @import "./tamplate";
 
-.main_content{
+.main_content {
   padding-top: 160px;
   padding-bottom: 183px;
-  @include max-screen(992px){
+  @include max-screen(992px) {
     padding-top: 84px;
     padding-bottom: 60px;
   }
-  .container{
+
+  .container {
     max-width: 904px;
-    @include max-screen(576px){
+    @include max-screen(576px) {
       padding: 0 40px;
     }
     //@include max-screen(576px){
     //  padding: 0 20px;
     //}
   }
-  h1{
+
+  h1 {
     font-family: 'Gilroy';
     font-style: normal;
     font-weight: 600;
@@ -28,25 +30,27 @@
     color: #000000;
     text-align: center;
     margin-bottom: 20px;
-    @include max-screen(767px){
+    @include max-screen(767px) {
       font-family: 'Gilroy';
       font-style: normal;
       font-weight: 600;
       font-size: 40px;
     }
-    @include max-screen(464px){
+    @include max-screen(464px) {
       font-weight: 600;
       font-size: 33px;
     }
-    @include max-screen(375px){
+    @include max-screen(375px) {
       font-weight: 600;
       font-size: 30px;
     }
-    &.red{
+
+    &.red {
       color: #D00D29;
     }
   }
-  h4{
+
+  h4 {
     font-family: 'Gilroy';
     font-style: normal;
     font-weight: 400;
@@ -56,14 +60,16 @@
     color: #000000;
     margin-bottom: 20px;
   }
-  .form_group{
+
+  .form_group {
     display: flex;
     margin-bottom: 90px;
-    @include max-screen(767px){
+    @include max-screen(767px) {
       display: block;
     }
-    input{
-      font-family: 'Gilroy';
+
+    input {
+      font-family: 'Gilroy-Medium';
       font-style: normal;
       font-weight: 500;
       font-size: 16px;
@@ -78,13 +84,14 @@
       border: 1px solid #DEDEDE;
       border-radius: 100px;
       margin-right: 10px;
-      @include max-screen(767px){
+      @include max-screen(767px) {
         max-width: 100%;
         margin-right: 0;
         margin-bottom: 10px;
       }
     }
-    button{
+
+    button {
       width: 259px;
       height: 70px;
       background: #D00D29;
@@ -98,14 +105,15 @@
       text-transform: uppercase;
       color: #FFFFFF;
       cursor: pointer;
-      @include max-screen(767px){
+      @include max-screen(767px) {
         margin-bottom: 40px;
         width: 100%;
       }
     }
   }
-  h2{
-    font-family: 'Gilroy';
+
+  h2 {
+    font-family: 'Gilroy-Medium';
     font-style: normal;
     font-weight: 600;
     font-size: 30px;
@@ -114,24 +122,27 @@
     color: #000000;
     margin-bottom: 20px;
   }
-  p{
-    font-family: 'Gilroy';
+
+  p {
+    font-family: 'Gilroy-Medium';
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 140%;
     color: #6C6C6C;
-    &.mb-70{
+
+    &.mb-70 {
       margin-bottom: 70px;
-      @include max-screen(767px){
+      @include max-screen(767px) {
         margin-bottom: 20px;
       }
     }
   }
-  h3{
+
+  h3 {
     background: #EEEEEE;
     border-radius: 10px;
-    font-family: 'Gilroy';
+    font-family: 'Gilroy-Medium';
     font-style: normal;
     font-weight: 600;
     font-size: 30px;
@@ -141,7 +152,8 @@
     padding: 20px;
     box-sizing: border-box;
   }
-  .description_step{
+
+  .description_step {
     min-height: 152px;
     display: flex;
     align-items: center;
@@ -149,11 +161,12 @@
     padding: 20px 10px;
     box-sizing: border-box;
     margin-bottom: 70px;
-    @include max-screen(767px){
+    @include max-screen(767px) {
       display: block;
       margin-bottom: 20px;
     }
-    &.part_2{
+
+    &.part_2 {
       img {
         max-width: 209px;
         display: block;
@@ -163,45 +176,83 @@
         }
       }
     }
-    &.part_3{
-      img{
+
+    &.part_3 {
+      img {
         max-width: 209px;
         display: block;
-        @include max-screen(767px){
+        @include max-screen(767px) {
           max-width: 100%;
           width: 100%;
         }
       }
+
       margin-bottom: 0px;
     }
-    p{
-      font-family: 'Gilroy';
+
+    p {
+      font-family: 'Gilroy-Medium';
       font-style: normal;
       font-weight: 600;
       font-size: 20px;
       line-height: 140%;
       color: #6C6C6C;
       max-width: 693px;
-      @include max-screen(767px){
+      @include max-screen(767px) {
         margin-bottom: 20px;
       }
     }
-    img{
+
+    img {
       max-width: 161px;
       display: block;
-      @include max-screen(767px){
+      @include max-screen(767px) {
 
       }
     }
   }
 }
+
 ::placeholder {
-  font-family: 'Gilroy';
+  font-family: 'Gilroy-Medium';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 128%;
   color: #C6C6C6;
+}
+
+footer {
+  .carusel_footer {
+    h5 {
+      font-family: 'Gilroy-Medium';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 128%;
+      text-align: center;
+      color: #696969;
+      margin-bottom: 4px;
+    }
+
+    h4 {
+      font-family: 'Gilroy-Medium';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 128%;
+      text-align: center;
+      color: #000000;
+      margin-bottom: 32px;
+    }
+  }
+
+  .owl-carousel {
+    a {
+      max-width: 217px;
+      display: inline-block;
+    }
+  }
 }
 
 
