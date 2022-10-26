@@ -315,11 +315,23 @@ img {
   transform: translateX(50%);
   transition: all 0.5s;
 }
+@media screen and (max-width: 576px) {
+  .navbar-menu {
+    min-width: auto;
+    width: 100%;
+    transform: translateY(20%);
+  }
+}
 .navbar-menu.show {
   opacity: 1;
   visibility: inherit;
   transform: translateX(0);
   transition: all 0.5s;
+}
+@media screen and (max-width: 576px) {
+  .navbar-menu.show {
+    transform: translateY(0);
+  }
 }
 .navbar-menu__btn-close {
   display: flex;
@@ -366,6 +378,11 @@ body.hidden:before {
   opacity: 1;
   visibility: inherit;
   transition: all 0.3s;
+}
+@media screen and (max-width: 576px) {
+  body.hidden {
+    overflow: hidden;
+  }
 }
 
 .main_content {
