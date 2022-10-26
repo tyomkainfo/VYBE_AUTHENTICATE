@@ -34,6 +34,17 @@
       font-weight: 600;
       font-size: 40px;
     }
+    @include max-screen(464px){
+      font-weight: 600;
+      font-size: 33px;
+    }
+    @include max-screen(375px){
+      font-weight: 600;
+      font-size: 30px;
+    }
+    &.red{
+      color: #D00D29;
+    }
   }
   h4{
     font-family: 'Gilroy';

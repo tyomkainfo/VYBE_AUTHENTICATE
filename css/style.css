@@ -127,6 +127,16 @@ img {
       font-style: normal;
       font-weight: 600;
       font-size: 40px; } }
+  @media screen and (max-width: 464px) {
+    .main_content h1 {
+      font-weight: 600;
+      font-size: 33px; } }
+  @media screen and (max-width: 375px) {
+    .main_content h1 {
+      font-weight: 600;
+      font-size: 30px; } }
+    .main_content h1.red {
+      color: #D00D29; }
   .main_content h4 {
     font-family: 'Gilroy';
     font-style: normal;
