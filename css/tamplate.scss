@@ -1,4 +1,13 @@
 /* header */
+@keyframes hidden {
+  from {
+    opacity: 1
+  }
+  to {
+    opacity: 0;
+    display: none
+  }
+}
 
 .header {
   background-color: #000000;
@@ -21,7 +30,7 @@
   // .header__logo
   &__logo {
     display: block;
-    max-width: 300px;
+    max-width: 250px;
     width: 100%;
   }
 
@@ -33,6 +42,13 @@
     padding: 10px 10px 10px 20px;
     border: 1px solid #ffffff;
     border-radius: 100px;
+    opacity: 1;
+
+    &.hidden {
+      opacity: 0;
+      display: none;
+      transition: opacity 0.2s, display 0s 0.2s;
+    }
 
     .text {
       font-family: "Gilroy", sans-serif;
@@ -49,7 +65,7 @@
 
   // .header__btn-group
   &__btn-group {
-    max-width: 300px;
+    max-width: 250px;
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -82,7 +98,5 @@
   height: 50px;
   background-color: #fff;
   border-radius: 100px;
-
-  
 }
 
