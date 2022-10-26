@@ -9,7 +9,12 @@
     padding-top: 84px;
     padding-bottom: 60px;
   }
+  &.distributors{
+    h1, h4{
+      text-align: left;
+    }
 
+  }
   .container {
     max-width: 904px;
     @include max-screen(576px) {
@@ -210,12 +215,6 @@
 
       }
     }
-  }
-  &.distributors{
-    h1, h4{
-      text-align: left;
-    }
-
   }
 }
 
