@@ -170,6 +170,8 @@
   }
 }
 
+/* nav-menu */
+
 .navbar-menu {
   position: fixed;
   min-width: 537px;
@@ -208,6 +210,10 @@
     display: flex;
     margin-left: auto;
     margin-bottom: 20px;
+
+    @include max-screen(576px) {
+      margin-left: 0;
+    }
   }
 
   // .navbar-menu__list
