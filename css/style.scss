@@ -22,6 +22,7 @@
 
   .form_group {
     display: flex;
+    flex-direction: row;
     margin-bottom: 90px;
     @include max-screen(767px) {
       display: block;
