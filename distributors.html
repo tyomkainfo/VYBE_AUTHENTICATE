@@ -95,15 +95,15 @@
     </ul>
 </nav>
 
-<section class="main_content distributors">
+<section class="distributors">
     <div class="container">
         <h1>Distributors/Wholesale<br>Registration</h1>
         <h4>
             Become an VYBE Wholesaler/Distributor
         </h4>
-        <div class="distributors__form">
 
-            <form action="#">
+        <form action="#">
+            <div class="distributors__form">
 
                 <div class="form_group">
                     <label class="form-label"
@@ -134,7 +134,6 @@
 
                     <span class="has-error">Lorem ipsum dolor sit amet.</span>
                 </div>
-
 
                 <div class="form_group">
                     <label class="form-label"
@@ -181,9 +180,6 @@
                     <span class="has-error">Lorem ipsum dolor sit amet.</span>
                 </div>
 
-                <!-- =========================================================== -->
-                <!--                file            -->
-
                 <div class="form_group">
                     <label class="form-label"
                            for="certificate">
@@ -191,20 +187,18 @@
                     </label>
 
                     <div class="form-file">
-                        <input class="form_file"
-                               id="certificate"
-                               type="file"
-                               accept=".jpg, .png, .pdf"
-                               name="certificate">
-                        <div class="form-file__btn">CHOOSE FILE</div>
+                        <div class="form-file__btn">
+                            <input class="form_file-input"
+                                   id="certificate"
+                                   type="file"
+                                   accept=".jpg, .png, .pdf"
+                                   name="certificate">
+                            CHOOSE FILE
+                        </div>
                     </div>
-
 
                     <span class="has-error">Lorem ipsum dolor sit amet.</span>
                 </div>
-
-                <!-- =========================================================== -->
-
 
                 <div class="form_group">
                     <label class="form-label"
@@ -221,7 +215,6 @@
                     <span class="has-error">Lorem ipsum dolor sit amet.</span>
                 </div>
 
-
                 <div class="form_group">
                     <label class="form-label"
                            for="validId">
@@ -229,21 +222,18 @@
                     </label>
 
                     <div class="form-file">
-                        <input class="form_file"
-                               id="validId"
-                               type="file"
-                               accept=".pdf, .jpg, .png"
-                               name="validId">
-                        <div class="form-file__btn">CHOOSE FILE</div>
+                        <div class="form-file__btn">
+                            <input class="form_file-input"
+                                   id="validId"
+                                   type="file"
+                                   accept=".pdf, .jpg, .png"
+                                   name="validId">
+                            CHOOSE FILE
+                        </div>
                     </div>
-
 
                     <span class="has-error">Lorem ipsum dolor sit amet.</span>
                 </div>
-
-
-                <!-- =========================================================== -->
-                <!--                selected            -->
 
                 <div class="form_group">
                     <label class="form-label"
@@ -262,8 +252,6 @@
 
                     <span class="has-error">Lorem ipsum dolor sit amet.</span>
                 </div>
-
-                <!-- =========================================================== -->
 
                 <div class="form_group">
                     <label class="form-label"
@@ -340,12 +328,12 @@
                     <span class="has-error">Lorem ipsum dolor sit amet.</span>
                 </div>
 
-                <button class="btn"
+                <button class="btn distributors__form-btn"
                         type="submit">
                     SUBMIT
                 </button>
-            </form>
-        </div>
+            </div>
+        </form>
     </div>
 </section>
 

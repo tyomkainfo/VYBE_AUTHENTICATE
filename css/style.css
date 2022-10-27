@@ -132,7 +132,7 @@ img {
   font-display: swap;
 }
 @font-face {
-  font-family: "Gilroy-Medium";
+  font-family: "Gilroy";
   src: url("../fonts/Gilroy-Medium.eot");
   src: url("../fonts/Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.ttf") format("truetype"), url("../fonts/Gilroy-Medium.svg#Gilroy-Medium") format("svg");
   font-weight: 500;
@@ -391,6 +391,115 @@ body.hidden:before {
   }
 }
 
+/* distributors  */
+.distributors {
+  padding-top: 240px;
+  padding-bottom: 60px;
+  margin-bottom: 120px;
+}
+@media screen and (max-width: 992px) {
+  .distributors {
+    padding-top: 120px;
+    margin-bottom: 0;
+  }
+}
+.distributors__form-btn {
+  min-width: 264px;
+  min-height: 70px;
+  font-size: 24px;
+  margin: 30px auto;
+}
+
+.distributors__form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px 30px;
+}
+@media screen and (max-width: 992px) {
+  .distributors__form {
+    gap: 30px;
+  }
+}
+.distributors__form .form_group {
+  width: calc(50% - 15px);
+  min-height: 125px;
+}
+@media screen and (max-width: 992px) {
+  .distributors__form .form_group {
+    width: 100%;
+  }
+}
+.distributors__form .form_group .form-file {
+  margin: auto 0;
+}
+
+.form_group {
+  position: relative;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.form_group .has-error {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+}
+
+.has-error {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #D00D29;
+}
+
+.form-label {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #000000;
+  padding: 10px;
+  display: inline-block;
+  width: max-content;
+}
+
+.form-file .form-file__btn {
+  position: relative;
+  min-width: 122px;
+  width: max-content;
+  min-height: 40px;
+  padding: 10px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Neuzeit Grotesk", sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 600;
+  background-color: #000000;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+@media screen and (max-width: 992px) {
+  .form-file .form-file__btn {
+    min-height: 50px;
+  }
+}
+.form-file .form-file__btn .form_file-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+  font-size: 0;
+}
+
 .main_content {
   padding-top: 160px;
   padding-bottom: 183px;
@@ -409,50 +518,6 @@ body.hidden:before {
     padding: 0 40px;
   }
 }
-.main_content h1 {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 70px;
-  line-height: 100%;
-  letter-spacing: 0.01em;
-  color: #000000;
-  text-align: center;
-  margin-bottom: 20px;
-}
-@media screen and (max-width: 767px) {
-  .main_content h1 {
-    font-family: "Gilroy";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
-  }
-}
-@media screen and (max-width: 464px) {
-  .main_content h1 {
-    font-weight: 600;
-    font-size: 33px;
-  }
-}
-@media screen and (max-width: 375px) {
-  .main_content h1 {
-    font-weight: 600;
-    font-size: 30px;
-  }
-}
-.main_content h1.red {
-  color: #D00D29;
-}
-.main_content h4 {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 140%;
-  text-align: center;
-  color: #000000;
-  margin-bottom: 20px;
-}
 .main_content .form_group {
   display: flex;
   margin-bottom: 90px;
@@ -460,30 +525,6 @@ body.hidden:before {
 @media screen and (max-width: 767px) {
   .main_content .form_group {
     display: block;
-  }
-}
-.main_content .form_group .form_control {
-  font-family: "Gilroy-Medium";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 128%;
-  color: #C6C6C6;
-  padding: 25px 37px;
-  box-sizing: border-box;
-  max-width: 595px;
-  width: 100%;
-  height: 70px;
-  background: #F9F9F9;
-  border: 1px solid #DEDEDE;
-  border-radius: 100px;
-  margin-right: 10px;
-}
-@media screen and (max-width: 767px) {
-  .main_content .form_group .form_control {
-    max-width: 100%;
-    margin-right: 0;
-    margin-bottom: 10px;
   }
 }
 .main_content .form_group button {
@@ -506,6 +547,50 @@ body.hidden:before {
     margin-bottom: 40px;
     width: 100%;
   }
+}
+.main_content .form_control {
+  max-width: 595px;
+  margin-right: 10px;
+}
+@media screen and (max-width: 767px) {
+  .main_content .form_control {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+.main_content h1 {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 767px) {
+  .main_content h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 464px) {
+  .main_content h1 {
+    font-size: 33px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .main_content h1 {
+    font-size: 30px;
+  }
+}
+.main_content h1.red {
+  color: #D00D29;
+}
+.main_content h4 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 20px;
 }
 .main_content h2 {
   font-family: "Gilroy-Medium";
@@ -606,7 +691,76 @@ body.hidden:before {
   text-align: left;
 }
 
-::placeholder {
+.form_control,
+.form_select {
+  font-family: "Gilroy-Medium", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #000000;
+  padding: 25px 37px;
+  width: 100%;
+  height: 70px;
+  background: #F9F9F9;
+  border: 1px solid #DEDEDE;
+  border-radius: 100px;
+}
+
+select, select.form_select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("../images/arrow_back_down.svg");
+  background-position: calc(100% - 15px) center;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 100%;
+  letter-spacing: 0.01em;
+  color: #000000;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 767px) {
+  h1 {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 464px) {
+  h1 {
+    font-weight: 600;
+    font-size: 33px;
+  }
+}
+@media screen and (max-width: 375px) {
+  h1 {
+    font-weight: 600;
+    font-size: 30px;
+  }
+}
+h1.red {
+  color: #D00D29;
+}
+
+h4 {
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.form_select::placeholder {
   font-family: "Gilroy-Medium";
   font-style: normal;
   font-weight: 500;
