@@ -354,6 +354,19 @@ body.hidden:before {
   @media screen and (max-width: 767px) {
     .main_content .form_group {
       display: block; } }
+    .main_content .form_group .fo-input {
+      max-width: 595px;
+      width: 100%;
+      margin-right: 10px; }
+  @media screen and (max-width: 767px) {
+    .main_content .form_group .fo-input {
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px; } }
+      .main_content .form_group .fo-input .has-error {
+        color: #d00d29;
+        font-size: 14px;
+        padding: 15px 17px; }
     .main_content .form_group .form_control {
       font-family: 'Gilroy-Medium';
       font-style: normal;
@@ -368,8 +381,7 @@ body.hidden:before {
       height: 70px;
       background: #F9F9F9;
       border: 1px solid #DEDEDE;
-      border-radius: 100px;
-      margin-right: 10px; }
+      border-radius: 100px; }
   @media screen and (max-width: 767px) {
     .main_content .form_group .form_control {
       max-width: 100%;

@@ -72,7 +72,21 @@
     @include max-screen(767px) {
       display: block;
     }
-
+    .fo-input{
+      max-width: 595px;
+      width: 100%;
+      margin-right: 10px;
+      @include max-screen(767px) {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+      .has-error{
+        color: #d00d29;
+        font-size: 14px;
+        padding: 15px 17px;
+      }
+    }
     .form_control {
       font-family: 'Gilroy-Medium';
       font-style: normal;
@@ -88,7 +102,6 @@
       background: #F9F9F9;
       border: 1px solid #DEDEDE;
       border-radius: 100px;
-      margin-right: 10px;
       @include max-screen(767px) {
         max-width: 100%;
         margin-right: 0;
