@@ -119,10 +119,10 @@
             Counterfeit VYBE Vape products are low quality, potentially dangerous, and usually defective.<br>Our
             authentication system can help you guarantee your cake is authentic.
         </h4>
-        <form action="" method="">
+        <form action="" method="" id="check">
             <div class="form_group">
                 <div class="fo-input">
-                    <input type="text" name="" class="form_control" placeholder="Enter Secutiry Code" />
+                    <input type="text" name="code" class="form_control" placeholder="Enter Secutiry Code" />
                     <span class="has-error"></span>
                 </div>
                 <button type="submit">VERIFY</button>
@@ -300,5 +300,24 @@
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script src="js/vendors/owl.carousel.js"></script>
 <script src="js/script.js"></script>
+	<script>
+	    $( document ).ready(function() {
+		$("#check").submit(function(){
+		    $.get("https://pay.limitlessx.com/rest/vybe/check/"+$("[name=code]").val(),function(json){
+			if(json.code){
+			    var message = "Code is valid";
+			    if(json.checked>1){
+				message+=" (checked "+(json.checked-1)+" times)";
+			    }
+			    alert(message);
+			}else{
+			    alert("Code is not valid");
+			}
+		    });
+		    return false;
+		})
+	    });
+	</script>
+
 </body>
 </html>

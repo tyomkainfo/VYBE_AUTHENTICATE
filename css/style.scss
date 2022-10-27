@@ -132,9 +132,9 @@
   }
 
   h2 {
-    font-family: 'Gilroy-Medium';
+    font-family: 'Gilroy';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 30px;
     line-height: 100%;
     letter-spacing: 0.01em;
@@ -143,9 +143,9 @@
   }
 
   p {
-    font-family: 'Gilroy-Medium';
+    font-family: 'Gilroy';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 20px;
     line-height: 140%;
     color: #6C6C6C;
@@ -195,7 +195,6 @@
         }
       }
     }
-
     &.part_3 {
       img {
         max-width: 209px;
@@ -206,7 +205,6 @@
         }
       }
 
-      margin-bottom: 0px;
     }
 
     p {
