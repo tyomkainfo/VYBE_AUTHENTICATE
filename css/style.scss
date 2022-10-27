@@ -27,6 +27,46 @@
       display: block;
     }
 
+    .fo-input{
+      max-width: 595px;
+      width: 100%;
+      margin-right: 10px;
+      @include max-screen(767px) {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+      .has-error{
+        color: #d00d29;
+        font-size: 14px;
+        padding: 15px 17px;
+        display: block;
+        @include max-screen(767px) {
+          padding: 15px 3px;
+        }
+      }
+    }
+    .form_control {
+      font-family: 'Gilroy-Medium';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 128%;
+      color: #C6C6C6;
+      padding: 25px 37px;
+      box-sizing: border-box;
+      max-width: 595px;
+      width: 100%;
+      height: 70px;
+      background: #F9F9F9;
+      border: 1px solid #DEDEDE;
+      border-radius: 100px;
+      @include max-screen(767px) {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
 
     button {
       width: 259px;
