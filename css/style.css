@@ -366,7 +366,11 @@ body.hidden:before {
       .main_content .form_group .fo-input .has-error {
         color: #d00d29;
         font-size: 14px;
-        padding: 15px 17px; }
+        padding: 15px 17px;
+        display: block; }
+  @media screen and (max-width: 767px) {
+    .main_content .form_group .fo-input .has-error {
+      padding: 15px 3px; } }
     .main_content .form_group .form_control {
       font-family: 'Gilroy-Medium';
       font-style: normal;

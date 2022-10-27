@@ -85,6 +85,10 @@
         color: #d00d29;
         font-size: 14px;
         padding: 15px 17px;
+        display: block;
+        @include max-screen(767px) {
+          padding: 15px 3px;
+        }
       }
     }
     .form_control {
